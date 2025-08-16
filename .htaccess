@@ -1,0 +1,4 @@
+PassengerAppRoot /home/luso8827/planetapax
+PassengerStartupFile app.js
+PassengerNodejs /opt/cpanel/ea-nodejs22/bin/node
+PassengerAppType node
