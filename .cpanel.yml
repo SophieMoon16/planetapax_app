@@ -5,3 +5,4 @@ deployment:
     - /bin/cp package.json $DEPLOYPATH
     - /bin/cp -R resources $DEPLOYPATH
     - /bin/cp -R views $DEPLOYPATH
+    - cd $DEPLOYPATH && npm install
