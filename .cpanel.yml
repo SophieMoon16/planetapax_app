@@ -1,4 +1,8 @@
 ---
 deployment:
   tasks:
-    - /usr/bin/bash deploy.sh
+    - export DEPLOYPATH=/home/luso8827/planetapax/
+      - /bin/cp app.js $DEPLOYPATH
+      - /bin/cp package.json $DEPLOYPATH
+      - /bin/cp -R resources $DEPLOYPATH
+      - /bin/cp -R views $DEPLOYPATH
