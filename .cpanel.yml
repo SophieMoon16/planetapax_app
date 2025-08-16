@@ -1,8 +1,22 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/luso8827/planetapax/
-    - /bin/cp app.js $DEPLOYPATH
-    - /bin/cp package.json $DEPLOYPATH
-    - /bin/cp -R resources $DEPLOYPATH
-    - /bin/cp -R views $DEPLOYPATH
+    - task: "Copy app.js"
+      description: "Copie app.js vers le répertoire de déploiement"
+      script: "cp app.js /home/luso8827/planetapax/"
+
+    - task: "Copy package.json"
+      description: "Copie package.json vers le répertoire de déploiement"
+      script: "cp package.json /home/luso8827/planetapax/"
+
+    - task: "Copy resources"
+      description: "Copie le dossier resources"
+      script: "cp -R resources /home/luso8827/planetapax/"
+
+    - task: "Copy views"
+      description: "Copie le dossier views"
+      script: "cp -R views /home/luso8827/planetapax/"
+
+    - task: "Install dependencies"
+      description: "Installe les dépendances npm"
+      script: "cd /home/luso8827/planetapax/ && npm install"
