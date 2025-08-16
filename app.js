@@ -24,3 +24,5 @@ app.use((err, req, res, next) => {
   console.error("Erreur attrapée :", err.stack);
   res.status(500).send(`<pre>Erreur serveur :\n${err.stack}</pre>`);
 });
+
+module.exports = app;
