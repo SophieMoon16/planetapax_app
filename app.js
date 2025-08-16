@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "resources")));
 
 // Route principale (page d'accueil)
 app.get("/", (req, res) => {
-  res.render("index", { title: "Bienvenue chez Planetapax !" });
+  res.render("index", { title: "Bienvenue chez Planetapax " });
 });
 
 // Lancement de l'app
