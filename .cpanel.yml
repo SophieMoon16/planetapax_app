@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - /usr/bin/bash deploy.sh
