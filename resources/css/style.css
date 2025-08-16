@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0 6rem 0 6rem;
+  border: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  background-color: rgb(255, 245, 245);
+}
+a {
+  text-decoration: none;
+  color: rgb(38, 38, 134);
+}
+li {
+  list-style-type: none;
+  padding: 0.5rem;
+  font-size: small;
+  color: black;
+}
+
+.sidenav {
+  display: none;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+}
+
+ul {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 3rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.hero {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  padding: 2rem 3rem 2rem 3rem;
+  margin: 2rem 0rem 2rem 0rem;
+  line-height: 2;
+}
+
+.hero-img {
+  width: 28rem;
+  margin-left: 6rem;
+}
+.hero-img:hover {
+  transform: scale(1.05);
+}
+.button {
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  font-size: medium;
+  margin: 1rem 1.5rem 1rem 0rem;
+  width: 11rem;
+}
+
+.button:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.blue {
+  color: #009dfe;
+}
+
+.pink {
+  color: #f573c7;
+}
+
+.goals {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  text-align: center;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 3rem;
+}
+
+.card p {
+  padding: 0.5rem;
+}
+
+/* Footer styles */
+
+footer {
+  font-size: small;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.rights {
+  padding: 1rem;
+}
+.admin {
+  line-height: 2rem;
+}
+
+/*Responsive design for tablets and mobiles */
+@media (max-width: 900px) {
+  body {
+    padding: 0 2rem 0 2rem;
+  }
+  .hero {
+    display: grid;
+    background-color: white;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    line-height: 2;
+  }
+
+  .hero-img-div {
+    margin: 0 auto;
+  }
+
+  .hero-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+  ul {
+    display: none;
+  }
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  .sidenav {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: lightgray;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5rem;
+  }
+
+  .centernav {
+    padding: 1rem;
+    text-align: right;
+    font-size: smaller;
+  }
+
+  .sidenav a {
+    padding: 0.7rem;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #000000;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+    margin-left: 8rem;
+  }
+}
