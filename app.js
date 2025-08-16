@@ -8,7 +8,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 // Servir les fichiers statiques (CSS, images...)
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "resources")));
 
 // Route principale (page d'accueil)
 app.get("/", (req, res) => {
